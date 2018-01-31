@@ -209,5 +209,8 @@
     <ClCompile Include="StairCard.cpp">
       <Filter>Source Files\cards</Filter>
     </ClCompile>
+    <ClCompile Include="csv_read.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -182,6 +182,7 @@
     <ClCompile Include="Battle.cpp" />
     <ClCompile Include="BranchCard.cpp" />
     <ClCompile Include="CardObject.cpp" />
+    <ClCompile Include="csv_read.cpp" />
     <ClCompile Include="Deck.cpp" />
     <ClCompile Include="Dice.cpp" />
     <ClCompile Include="EternalDungeon.cpp" />
