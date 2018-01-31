@@ -150,6 +150,7 @@
     <ClInclude Include="Armor.h" />
     <ClInclude Include="BasicAttack.h" />
     <ClInclude Include="Battle.h" />
+    <ClInclude Include="BranchCard.h" />
     <ClInclude Include="CardObject.h" />
     <ClInclude Include="Deck.h" />
     <ClInclude Include="Dice.h" />
@@ -164,6 +165,7 @@
     <ClInclude Include="Name.h" />
     <ClInclude Include="Picture.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="StairCard.h" />
     <ClInclude Include="Stat.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -178,6 +180,7 @@
     <ClCompile Include="Armor.cpp" />
     <ClCompile Include="BasicAttack.cpp" />
     <ClCompile Include="Battle.cpp" />
+    <ClCompile Include="BranchCard.cpp" />
     <ClCompile Include="CardObject.cpp" />
     <ClCompile Include="Deck.cpp" />
     <ClCompile Include="Dice.cpp" />
@@ -193,6 +196,7 @@
     <ClCompile Include="Name.cpp" />
     <ClCompile Include="Picture.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="StairCard.cpp" />
     <ClCompile Include="Stat.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

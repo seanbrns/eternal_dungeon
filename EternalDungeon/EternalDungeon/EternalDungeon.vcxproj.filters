@@ -117,6 +117,12 @@
     <ClInclude Include="Player.h">
       <Filter>Header Files\game</Filter>
     </ClInclude>
+    <ClInclude Include="BranchCard.h">
+      <Filter>Header Files\cards</Filter>
+    </ClInclude>
+    <ClInclude Include="StairCard.h">
+      <Filter>Header Files\cards</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -195,6 +201,12 @@
       <Filter>Source Files\game</Filter>
     </ClCompile>
     <ClCompile Include="CardObject.cpp">
+      <Filter>Source Files\cards</Filter>
+    </ClCompile>
+    <ClCompile Include="BranchCard.cpp">
+      <Filter>Source Files\cards</Filter>
+    </ClCompile>
+    <ClCompile Include="StairCard.cpp">
       <Filter>Source Files\cards</Filter>
     </ClCompile>
   </ItemGroup>
