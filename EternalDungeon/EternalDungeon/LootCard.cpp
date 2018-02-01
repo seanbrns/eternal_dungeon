@@ -7,5 +7,5 @@ LootCard::~LootCard()
 
 void LootCard::Draw(GameWorld& gameWorld)
 {
-    std::cout << "Treasure Draw!\n";
+    std::cout << "Loot Draw!\n";
 }

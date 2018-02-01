@@ -5,6 +5,7 @@ class TreasureCard :
 {
 public:
     TreasureCard();
+    TreasureCard(std::vector<std::string> csvLine);
     ~TreasureCard();
 
     void Draw(GameWorld& gameWorld);

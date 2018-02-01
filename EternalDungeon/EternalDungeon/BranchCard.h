@@ -5,6 +5,8 @@ class BranchCard :
 {
 public:
     BranchCard();
+    BranchCard(std::vector<std::string> csvLine);
+    void Draw(GameWorld& gameWorld);
     ~BranchCard();
 };
 

@@ -5,7 +5,7 @@
 #include <random>
 #include <thread>
 #include <chrono>
-void Print1(std::ostream& dataOut, size_t colorNum, bool endLine);
+
 /******************************************************************************
 * Print
 *
@@ -24,7 +24,7 @@ void Print(std::string str, size_t colorNum, bool endLine)
 
     for (char c : str)
     {
-        std::this_thread::sleep_for(std::chrono::milliseconds(1));
+        std::this_thread::sleep_for(std::chrono::microseconds(1));
         std::cout << c << std::flush;
     }
     if (endLine)

@@ -17,6 +17,7 @@ public:
         armor(5),
         attack(new Dice(1, 6, 1))
     {}
+    MonsterCard(std::vector<std::string> csvLine);
     ~MonsterCard();
 
     void Draw(GameWorld& gameWorld);

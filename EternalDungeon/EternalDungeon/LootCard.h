@@ -12,7 +12,8 @@ public:
         ACCESSORY,
         CONSUMABLE
     };
-    LootCard() : name_("lootName") {}
+    LootCard() {}
+    LootCard(std::vector<std::string> csvLine);
     ~LootCard();
 
     void Draw(GameWorld& gameWorld);

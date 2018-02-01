@@ -10,3 +10,8 @@ StairCard::StairCard()
 StairCard::~StairCard()
 {
 }
+
+void StairCard::Draw(GameWorld& gameWorld)
+{
+    std::cout << "Stair Draw!\n";
+}
