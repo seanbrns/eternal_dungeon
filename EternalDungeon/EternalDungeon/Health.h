@@ -8,6 +8,7 @@ public:
         maxHealth_(maxHealth),
         maxHealthMod_(0)
     {};
+    Health() {}
     ~Health();
 
     bool IsDead() { return (health_ <= 0); }

@@ -5,13 +5,11 @@
 class Inventory
 {
 public:
-    Inventory() : 
+    Inventory() :
         weapon_(nullptr),
         armor_(nullptr),
         shield_(nullptr)
-    {
-        lootBag_.push_back(new LootCard());
-    }
+    {}
     ~Inventory() {}
 
     bool IsEmpty() { return lootBag_.empty(); }

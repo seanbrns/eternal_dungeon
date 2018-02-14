@@ -7,6 +7,7 @@ class CardObject
 {
 public:
     CardObject();
+    CardObject(std::vector<std::string> csvLine) {};
     ~CardObject();
     virtual void Draw(GameWorld& gameWorld) { std::cout << "ERROR-no draw\n"; }
     virtual void Reset() { std::cout << "ERROR-no reset\n"; }

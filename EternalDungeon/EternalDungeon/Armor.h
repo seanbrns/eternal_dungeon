@@ -7,6 +7,7 @@ public:
         armorMod_(0),
         defending_(false)
     {};
+    Armor() {};
     ~Armor();
 
     short GetArmor(void) { return armor_; }

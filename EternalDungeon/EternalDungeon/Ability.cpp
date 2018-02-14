@@ -6,8 +6,16 @@ Ability::~Ability()
 {
 }
 
-void Ability::Execute(std::vector<Player*> players, bool inCombat, MonsterCard* monster)
+bool Ability::Execute(std::vector<Player*> targetPlayers, bool inCombat, MonsterCard* targetMonster)
 {
-    ability_(players, inCombat, monster);
+    if (abilityFunc_ != nullptr)
+    {
+        return abilityFunc_(targetPlayers, inCombat, targetMonster);
+    }
+    return false;
 }
 
+void Ability::PrintAbilities()
+{
+    std::cout << name_ << ":\n" << description_ << "\n";
+}

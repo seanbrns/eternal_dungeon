@@ -143,7 +143,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Abilities.h" />
     <ClInclude Include="Ability.h" />
     <ClInclude Include="AbilityList.h" />
     <ClInclude Include="Accuracy.h" />
@@ -154,13 +153,16 @@
     <ClInclude Include="CardObject.h" />
     <ClInclude Include="Deck.h" />
     <ClInclude Include="Dice.h" />
+    <ClInclude Include="Event.h" />
     <ClInclude Include="EventCard.h" />
+    <ClInclude Include="EventList.h" />
     <ClInclude Include="GameWorld.h" />
     <ClInclude Include="Health.h" />
     <ClInclude Include="Inventory.h" />
     <ClInclude Include="Level.h" />
     <ClInclude Include="LootCard.h" />
     <ClInclude Include="MonsterAbility.h" />
+    <ClInclude Include="MonsterAbilityList.h" />
     <ClInclude Include="MonsterCard.h" />
     <ClInclude Include="Name.h" />
     <ClInclude Include="Picture.h" />
@@ -173,7 +175,6 @@
     <ClInclude Include="Utility.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Abilities.cpp" />
     <ClCompile Include="Ability.cpp" />
     <ClCompile Include="AbilityList.cpp" />
     <ClCompile Include="Accuracy.cpp" />
@@ -186,13 +187,16 @@
     <ClCompile Include="Deck.cpp" />
     <ClCompile Include="Dice.cpp" />
     <ClCompile Include="EternalDungeon.cpp" />
+    <ClCompile Include="Event.cpp" />
     <ClCompile Include="EventCard.cpp" />
+    <ClCompile Include="EventList.cpp" />
     <ClCompile Include="GameWorld.cpp" />
     <ClCompile Include="Health.cpp" />
     <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="Level.cpp" />
     <ClCompile Include="LootCard.cpp" />
     <ClCompile Include="MonsterAbility.cpp" />
+    <ClCompile Include="MonsterAbilityList.cpp" />
     <ClCompile Include="MonsterCard.cpp" />
     <ClCompile Include="Name.cpp" />
     <ClCompile Include="Picture.cpp" />

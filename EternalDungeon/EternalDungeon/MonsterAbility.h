@@ -6,9 +6,11 @@ class MonsterCard;
 class MonsterAbility
 {
 public:
+    typedef bool(*MonsterAbilityFuncPtr)(std::vector<Player*> players, MonsterCard* monster);
+
     MonsterAbility() {}
-    MonsterAbility(bool(*ability)(std::vector<Player*> players, MonsterCard* monster)) :
-        ability_(ability),
+    MonsterAbility(MonsterAbilityFuncPtr ability) :
+        abilityFunc_(ability),
         description_("no description"),
         name_("no Name")
     {}
@@ -20,7 +22,7 @@ public:
     void PrintAbilities();
 
 private:
-    bool(*ability_)(std::vector<Player*> players, MonsterCard* monster);
+    MonsterAbilityFuncPtr abilityFunc_;
     std::string description_;
     std::string name_;
 };

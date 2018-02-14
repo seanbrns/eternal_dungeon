@@ -23,6 +23,7 @@ public:
             armor(7),
             attack(new Dice(1, 6, 3))
     {}
+    Player(std::vector<std::string> csvLine);
     ~Player();
 
     std::string GetName() { return name_; }

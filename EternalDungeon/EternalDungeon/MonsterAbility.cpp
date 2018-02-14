@@ -8,9 +8,9 @@ MonsterAbility::~MonsterAbility()
 
 bool MonsterAbility::Execute(std::vector<Player*> players, MonsterCard* monster)
 {
-    if (ability_ != nullptr)
+    if (abilityFunc_ != nullptr)
     {
-        return ability_(players, monster);
+        return abilityFunc_(players, monster);
     }
     return false;
 }

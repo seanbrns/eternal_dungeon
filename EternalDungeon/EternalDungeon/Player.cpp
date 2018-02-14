@@ -29,6 +29,11 @@ static PlayerRestAction GetRestAction();
 
 static Player* ChooseTradePartner(std::vector<Player*> possibleTraders);
 
+Player::Player(std::vector<std::string> csvLine)
+{
+
+}
+
 Player::~Player()
 {
 }

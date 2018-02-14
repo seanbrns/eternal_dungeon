@@ -1,7 +1,4 @@
 #pragma once
+#include "Ability.h"
 
-class Player;
-class MonsterCard;
-
-// List of abilities
-void SuperPower(std::vector<Player*> players, bool inCombat, MonsterCard* monster);
+Ability::AbilityFuncPtr FindAbility(std::string name);

@@ -7,6 +7,7 @@ public:
     BasicAttack(Dice* attackDie):
         basicAttackDie_(attackDie)
     {}
+    BasicAttack() {}
     ~BasicAttack() {}
 
     int Damage() { return basicAttackDie_->Roll() + damageMod_; }

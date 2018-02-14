@@ -6,6 +6,7 @@ public:
         accuracy_(accuracy),
         accuracyMod_(0)
     {};
+    Accuracy() {}
     ~Accuracy();
 
     short GetAcc(void) { return (accuracy_ + accuracyMod_); }

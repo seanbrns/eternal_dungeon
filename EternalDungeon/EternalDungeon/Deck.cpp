@@ -41,6 +41,11 @@ CardObject* Deck::GetTopCard()
     return deck_.at(0);
 }
 
+CardObject* Deck::GetBottomCard()
+{
+    return deck_.back();
+}
+
 CardObject* Deck::GetCardAt(size_t idx)
 {
     return deck_.at(idx);
