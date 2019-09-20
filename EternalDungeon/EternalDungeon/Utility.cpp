@@ -20,7 +20,7 @@ void Print(std::string str, size_t colorNum, bool endLine)
 {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
-    SetConsoleTextAttribute(hConsole, colorNum);
+    SetConsoleTextAttribute(hConsole, static_cast<WORD>(colorNum));
 
     for (char c : str)
     {

@@ -6,11 +6,9 @@
 #include "Armor.h"
 #include "BasicAttack.h"
 #include "Inventory.h"
-#include "Abilities.h"
 #include "Level.h"
 #include "Stat.h"
 
-class CardObject;
 class Player
 {
 public:

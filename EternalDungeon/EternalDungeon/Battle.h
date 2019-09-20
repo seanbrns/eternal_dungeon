@@ -17,7 +17,7 @@ private:
     std::vector<Player*> fighters_;
     MonsterCard* monster_;
     Player* currFighter_;
-    short currFighterIdx_;
+    size_t currFighterIdx_;
     void MonsterTurn();
     void PlayerTurn();
 

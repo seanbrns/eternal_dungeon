@@ -12,10 +12,10 @@ public:
     ~Health();
 
     bool IsDead() { return (health_ <= 0); }
-    void Damage(short val);
-    void Heal(short val);
+    void Damage(size_t val);
+    void Heal(size_t val);
     void Reset() { health_ = maxHealth_; }
-    void HealthMod(short val) 
+    void HealthMod(size_t val)
     {
         maxHealthMod_ += val; 
         if (health_ > maxHealthMod_)
@@ -26,7 +26,7 @@ public:
     }
     void Print() { std::cout << "HP:" << health_ << "/" << maxHealth_ << "(" << maxHealthMod_ << ")\n"; }
 private:
-    short health_;
-    short maxHealth_;
-    short maxHealthMod_;
+    size_t health_;
+    size_t maxHealth_;
+    size_t maxHealthMod_;
 };

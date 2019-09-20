@@ -97,8 +97,8 @@ static bool HitCheck(Accuracy attackerAcc, Armor targetArmor)
 {
     bool hit = false;
     Print("Accuracy roll...", color_yellow, false);
-    short roll = die_1d12.Roll();
-    short totalVal = roll + attackerAcc.GetAcc();
+    size_t roll = die_1d12.Roll();
+    size_t totalVal = roll + attackerAcc.GetAcc();
     std::cout << roll << "+" << attackerAcc.GetAcc()
               << "=" << totalVal << " checked against " << targetArmor.GetArmor() << "\n";
     if (totalVal >= targetArmor.GetArmor())
@@ -184,7 +184,7 @@ void Battle::PlayerTurn()
             if (HitCheck(currFighter_->acc, monster_->armor))
             {
                 Print("Damage roll...", color_yellow, false);
-                int damage = currFighter_->attack.Damage();
+                size_t damage = currFighter_->attack.Damage();
                 std::cout << currFighter_->GetName() << " Attacks monster for " << damage << " damage\n";
                 monster_->hp.Damage(damage);
                 WaitForUser();
@@ -256,7 +256,7 @@ void Battle::MonsterTurn()
             else
             {
                 Print("Target roll...", color_yellow, false);
-                int playerNum = die_1d6.Roll() - 1;
+                size_t playerNum = die_1d6.Roll() - 1;
                 if ((playerNum < fighters_.size()) && !fighters_.at(playerNum)->hp.IsDead())
                 {
                     target = fighters_.at(playerNum);
@@ -270,7 +270,7 @@ void Battle::MonsterTurn()
         if (HitCheck(monster_->acc, target->armor))
         {
             Print("Damage roll...", color_yellow, false);
-            int damage = monster_->attack.Damage();
+            size_t damage = monster_->attack.Damage();
             std::cout << "does " << damage << " damage to " << target->GetName() << "\n";
             target->hp.Damage(damage);
             WaitForUser();

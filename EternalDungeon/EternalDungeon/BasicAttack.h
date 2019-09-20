@@ -10,7 +10,7 @@ public:
     BasicAttack() {}
     ~BasicAttack() {}
 
-    int Damage() { return basicAttackDie_->Roll() + damageMod_; }
+    size_t Damage() { return basicAttackDie_->Roll() + damageMod_; }
     void Print() 
     { 
         std::cout << "BASIC ATTACK: " << basicAttackDie_->GetAmount() << "D" << basicAttackDie_->GetDieSize();

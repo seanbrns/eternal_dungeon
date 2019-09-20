@@ -21,7 +21,7 @@ public:
     {}
     ~Level();
 
-    void GainExp(short val, Player* player);
+    void GainExp(size_t val, Player* player);
     Ability* ChooseAbility();
     void PrintAbilities();
     void PrintLvl()
@@ -31,7 +31,7 @@ public:
 private:
     std::vector<Ability*> abilities_;
     std::vector<levelMods> levelMods_;
-    short expPts_;
-    short level_;
+    size_t expPts_;
+    size_t level_;
 };
 

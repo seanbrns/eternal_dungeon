@@ -1,5 +1,4 @@
 #pragma once
-
 #include "LootCard.h"
 
 class Inventory

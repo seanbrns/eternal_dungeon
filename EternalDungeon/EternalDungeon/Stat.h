@@ -4,10 +4,10 @@ class Stat
 public:
     Stat();
     ~Stat();
-    bool AgilityCheck(short val);
-    bool MightCheck(short val);
-    bool KnowledgeCheck(short val);
-    bool WillpowerCheck(short val);
+    bool AgilityCheck(size_t val);
+    bool MightCheck(size_t val);
+    bool KnowledgeCheck(size_t val);
+    bool WillpowerCheck(size_t val);
 
     void AgilityMod(short val);
     void MightMod(short val);

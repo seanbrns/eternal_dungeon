@@ -14,11 +14,11 @@ Stat::~Stat()
 {
 }
 
-bool Stat::AgilityCheck(short val)
+bool Stat::AgilityCheck(size_t val)
 {
     Print("Agility Check:", color_lightYellow);
-    short roll = s_die1D12.Roll();
-    short totalVal = roll + agility_ + agilityMod_;
+    size_t roll = s_die1D12.Roll();
+    short totalVal = static_cast<short>(roll) + agility_ + agilityMod_;
     std::cout << roll << "+" << agility_ << "+" << agilityMod_
         << "=" << totalVal << " checked against " << val << "\n";
 
@@ -30,11 +30,11 @@ bool Stat::AgilityCheck(short val)
     Print("Fail...", color_lightRed);
     return false;
 }
-bool Stat::MightCheck(short val)
+bool Stat::MightCheck(size_t val)
 {
     Print("Might Check:", color_lightYellow);
-    short roll = s_die1D12.Roll();
-    short totalVal = roll + might_ + mightMod_;
+    size_t roll = s_die1D12.Roll();
+    short totalVal = static_cast<short>(roll) + might_ + mightMod_;
     std::cout << roll << "+" << might_ << "+" << mightMod_
         << "=" << totalVal << " checked against " << val << "\n";
 
@@ -46,11 +46,11 @@ bool Stat::MightCheck(short val)
     Print("Fail...", color_lightRed);
     return false;
 }
-bool Stat::KnowledgeCheck(short val)
+bool Stat::KnowledgeCheck(size_t val)
 {
     Print("Knowledge Check:", color_lightYellow);
-    short roll = s_die1D12.Roll();
-    short totalVal = roll + knowledge_ + knowledgeMod_;
+    size_t roll = s_die1D12.Roll();
+    short totalVal = static_cast<short>(roll) + knowledge_ + knowledgeMod_;
     std::cout << roll << "+" << knowledge_ << "+" << knowledgeMod_
         << "=" << totalVal << " checked against " << val << "\n";
 
@@ -62,11 +62,11 @@ bool Stat::KnowledgeCheck(short val)
     Print("Fail...", color_lightRed);
     return false;
 }
-bool Stat::WillpowerCheck(short val)
+bool Stat::WillpowerCheck(size_t val)
 {
     Print("Willpower Check:", color_lightYellow, false);
-    short roll = s_die1D12.Roll();
-    short totalVal = roll + willpower_ + willpowerMod_;
+    size_t roll = s_die1D12.Roll();
+    short totalVal = static_cast<short>(roll) + willpower_ + willpowerMod_;
     std::cout << roll << "+" << willpower_ << "+" << willpowerMod_ 
               << "=" << totalVal << " checked against " << val << "\n";
 

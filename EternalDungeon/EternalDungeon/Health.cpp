@@ -6,7 +6,7 @@ Health::~Health()
 {
 }
 
-void Health::Heal(short val)
+void Health::Heal(size_t val)
 {
     health_ += val;
     if (health_ > (maxHealth_ + maxHealthMod_))
@@ -16,7 +16,7 @@ void Health::Heal(short val)
     this->Print();
 }
 
-void Health::Damage(short val)
+void Health::Damage(size_t val)
 {
     health_ -= val;
     if (health_ < 0)

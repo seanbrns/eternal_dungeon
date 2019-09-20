@@ -10,9 +10,9 @@ Level::~Level()
 {
 }
 
-void Level::GainExp(short val, Player* player)
+void Level::GainExp(size_t val, Player* player)
 { 
-    short previousLevel = level_;
+    size_t previousLevel = level_;
     expPts_ += val; 
     for (size_t i= 0; i < MAX_LEVEL; i++)
     {
@@ -30,7 +30,7 @@ void Level::GainExp(short val, Player* player)
     {
         Print(player->GetName(), color_default, false);
         Print("-Level UP!", color_green);
-        short levelModIdx = level_ - 1;
+        size_t levelModIdx = level_ - 1;
         player->hp.HealthMod(levelMods_.at(levelModIdx).healthMod_);
         player->armor.ArmorMod(levelMods_.at(levelModIdx).ArmorMod_);
         player->acc.AccMod(levelMods_.at(levelModIdx).AccuracyMod_);
